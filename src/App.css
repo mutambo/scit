@@ -1,6 +1,11 @@
 .App {
   text-align: center;
+  
 }
+/* .logo{
+  background-image: url('images/undraw2.png');
+  background-position-y: center;
+} */
 
 .App-logo {
   height: 40vmin;
@@ -12,9 +17,24 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.img{
+  max-height: 40px;
+  max-width: 40px;
+  margin-right: 550px;
+  margin-top: 20px;  
+  position: absolute;
+  width: 101px;
+  height: 170px;
+  left: 390px;
+  top: 20px;
+}
 
+.text-nowrap .mt-3 .fs-2{
+  margin-left: 0px;
+  margin-top: 10px;
+}
 .App-header {
-  background-color: #282c34;
+  background-color: #ffffff;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +42,16 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background-image: url('images/undraw1.png'), url('images/undraw3.png');
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-size: 554px, 510px;
+  background-position: left top,right center;
 }
 
 .App-link {
   color: #61dafb;
+
 }
 
 @keyframes App-logo-spin {
