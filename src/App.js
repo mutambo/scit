@@ -7,7 +7,7 @@ import icon from './images/Tuk.jpg';
 
 import {
   Row,
-  Column,
+  Col,
   Button,
   Alert,
   ProgressBar,
@@ -22,13 +22,13 @@ function App () {
 
       <Container>
         <header className="App-header">
-        <div className="tuk">
-          <img src={icon} alt="import" className="img"/>
-          
+          <div className="tuk">
+            <img src={icon} alt="import" className="img" />
+
           </div>
-         
+
           <Row>
-          
+
             <div
               className="text-nowrap, fs-2"
               style={{width: '35rem', color: 'goldenrod'}}
@@ -48,27 +48,39 @@ function App () {
           </Row>
 
           <Form>
-            <Form.Group className="mb-2" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control type="email" placeholder="Enter email" />
-              <Form.Text className="text-muted">
-                We'll never share your email with anyone else.
-              </Form.Text>
-            </Form.Group>
+            <Form>
+              <Form.Group
+                as={Row}
+                className="mb-2"
+                controlId="formPlaintextUsername"
+              >
+                <Form.Label column sm="20">
+                  User Name
+                </Form.Label>
+                <Col sm="20">
+                <Form.Control type="Username" placeholder="Username" />
+                </Col>
+              </Form.Group>
 
-            <Form.Group className="mb-2" controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group>
-            <Form.Group className="mb-3" controlId="formBasicCheckbox">
-              <Form.Check type="checkbox" label="Check me out" />
-            </Form.Group>
-            <Button variant="primary" type="submit" className="mb-5">
-              Login
-            </Button>
+              <Form.Group
+                as={Row}
+                className="mb-3"
+                controlId="formPlaintextPassword"
+              >
+                <Form.Label column sm="20">
+                  Password
+                </Form.Label>
+                <Col sm="20">
+                  <Form.Control type="password" placeholder="Password" />
+                </Col>
+              </Form.Group>
+            </Form>
+           
           </Form>
           <MDBContainer />
-
+          <Button variant="primary" type="submit" className="mb-5">
+              Login
+            </Button>
         </header>
       </Container>
     </div>
