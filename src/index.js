@@ -9,8 +9,8 @@ import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
-    {/* <Signup/>  */}
+    {/* <App /> */}
+    <Signup/> 
   </React.StrictMode>,
   document.getElementById('root')
 );

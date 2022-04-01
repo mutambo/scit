@@ -6,92 +6,97 @@ import {BrowserRouter, Route, Routes} from 'react-router-dom';
 import Signup from './Components/Signup';
 // import React, { Component } from "react";
 import {Row, Col, Button, Container, Form} from 'react-bootstrap';
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 export class App extends Component {
-  constructor(props) {
-    super(props)
+  constructor (props) {
+    super (props);
     this.state = {
-      username: "",
-      password: ""
+      username: '',
+      password: '',
     };
   }
   onChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
+    this.setState ({[e.target.name]: e.target.value});
   };
 
   onLoginClick = () => {
     const userData = {
       username: this.state.username,
-      password: this.state.password
+      password: this.state.password,
     };
-    console.log("Sign up " + userData.username + " " + userData.password);
+    console.log ('Sign up ' + userData.username + ' ' + userData.password);
   };
-  render() {
+  render () {
     return (
       <div>
         <div className="App">
 
-<Container fluid>
-  <header className="App-header">
-    <div className="tuk">
-      <img src={icon} alt="import" className="img" />
+          <Container fluid>
+            <header className="App-header">
+              <div className="tuk">
+                <img src={icon} alt="import" className="img" />
 
-    </div>
+              </div>
 
-    <div
-      className="text-nowrap, fs-2"
-      style={{width: '35rem', color: 'goldenrod'}}
-    >
-      TUK-CSI ALLOCATION SCHEME 2021/2022
-      <div
-        className="text-wrap , fs-2"
-        style={{width: '35rem', color: 'blue', marginLeft: '-400px'}}
-      >
-        School of Computer Science
-        and Informatics
-      </div>
-    </div>
-    <div className="form , mt-5">
+              <div
+                className="text-nowrap, fs-2"
+                style={{width: '35rem', color: 'goldenrod'}}
+              >
+                TUK-CSI ALLOCATION SCHEME 2021/2022
+                <div
+                  className="text-wrap , fs-2"
+                  style={{width: '35rem', color: 'blue', marginLeft: '-400px'}}
+                >
+                  School of Computer Science
+                  and Informatics
+                </div>
+              </div>
+              <div className="form , mt-5">
 
-      <Form className="mt-5">
-        <Form.Group
-          as={Row}
-          className="mb-2"
-          controlId="formPlaintextUsername"
-        >
-          <Form.Label column sm="20">
-            User Name
-          </Form.Label>
-          <Col sm="20">
-            <Form.Control type="Username" placeholder="Username" />
-          </Col>
-        </Form.Group>
+                <Form className="mt-5">
+                  <Form.Group
+                    as={Row}
+                    className="mb-2"
+                    controlId="formPlaintextUsername"
+                  >
+                    <Form.Label column sm="20">
+                      User Name
+                    </Form.Label>
+                    <Col sm="20">
+                      <Form.Control type="Username" placeholder="Username" />
+                    </Col>
+                  </Form.Group>
 
-        <Form.Group
-          as={Row}
-          className="mb-3"
-          controlId="formPlaintextPassword"
-        >
-          <Form.Label column sm="20">
-            Password
-          </Form.Label>
-          <Col sm="20">
-            <Form.Control type="password" placeholder="Password" />
-          </Col>
-        </Form.Group>
-      </Form>
+                  <Form.Group
+                    as={Row}
+                    className="mb-3"
+                    controlId="formPlaintextPassword"
+                  >
+                    <Form.Label column sm="20">
+                      Password
+                    </Form.Label>
+                    <Col sm="20">
+                      <Form.Control type="password" placeholder="Password" />
+                    </Col>
+                  </Form.Group>
+                </Form>
 
-    </div>
+              </div>
 
-    <div className="login">
-      <Button variant="primary" type="submit" className="mt-5" onClick={this.onLoginClick}>
-        Login
-      </Button>
-    </div>
-  </header>
-</Container>
-</div>
+              <div className="login">
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="mt-5"
+                  onClick={this.onLoginClick}
+                >
+                  Login
+                </Button>
+              </div>
+            </header>
+          </Container>
+        </div>
       </div>
     );
   }
@@ -100,72 +105,6 @@ export class App extends Component {
 export default App;
 
 // function App () {
-  
-//   return (
-//     <div className="App">
-
-//       <Container fluid>
-//         <header className="App-header">
-//           <div className="tuk">
-//             <img src={icon} alt="import" className="img" />
-
-//           </div>
-
-//           <div
-//             className="text-nowrap, fs-2"
-//             style={{width: '35rem', color: 'goldenrod'}}
-//           >
-//             TUK-CSI ALLOCATION SCHEME 2021/2022
-//             <div
-//               className="text-wrap , fs-2"
-//               style={{width: '35rem', color: 'blue', marginLeft: '-400px'}}
-//             >
-//               School of Computer Science
-//               and Informatics
-//             </div>
-//           </div>
-//           <div className="form , mt-5">
-
-//             <Form className="mt-5">
-//               <Form.Group
-//                 as={Row}
-//                 className="mb-2"
-//                 controlId="formPlaintextUsername"
-//               >
-//                 <Form.Label column sm="20">
-//                   User Name
-//                 </Form.Label>
-//                 <Col sm="20">
-//                   <Form.Control type="Username" placeholder="Username" />
-//                 </Col>
-//               </Form.Group>
-
-//               <Form.Group
-//                 as={Row}
-//                 className="mb-3"
-//                 controlId="formPlaintextPassword"
-//               >
-//                 <Form.Label column sm="20">
-//                   Password
-//                 </Form.Label>
-//                 <Col sm="20">
-//                   <Form.Control type="password" placeholder="Password" />
-//                 </Col>
-//               </Form.Group>
-//             </Form>
-
-//           </div>
-
-//           <div className="login">
-//             <Button variant="primary" type="submit" className="mt-5" onClick={this.onSignupClick}>
-//               Login
-//             </Button>
-//           </div>
-//         </header>
-//       </Container>
-//     </div>
-//   );
-// }
 
 // export default App;
 

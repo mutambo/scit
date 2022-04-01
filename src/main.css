@@ -1,6 +1,6 @@
 .head {
   text-align: center;
-  
+  margin-right: 0;
 }
 
 .App-head {
@@ -85,8 +85,55 @@
   }
   .login{
     position: absolute;
-width: 178px;
-height: 74px;
-left: 625px;
-top: 430px;
+    width: 178px;
+    height: 74px;
+    left: 625px;
+    top: 430px;
+  }
+  .form-input{
+    position: absolute;
+    width: 938px;
+    height: 484px;
+    left: 150px;
+    top: 236px;
+
+  }
+
+  .header-text-image,.mb-5{
+    position: absolute;
+    width: 1900px;
+    left: 0px;
+    top: -96px;
+    margin-top: 10px;
+  }
+  .navbar{
+    position: absolute;
+    width: 980px;
+    height: 81px;
+    left: 65px;
+    top: 60px;
+  }
+  .me-auto{
+    position: absolute;
+    width: 744px;
+    height: 28px;
+    left: 290px;
+    top: 15px;
+    color: #ffffff;
+  }
+  .Submit{
+    position: absolute;
+    width: 301px;
+    height: 70px;
+    left: 572px;
+    top: 520px;
+  }
+  .small{
+    font-size: 12px;
+    width: 49%;
+  }
+  .nav{
+    border-radius: 20px;
+    width: 1111;
+    background-color: blue;
   }

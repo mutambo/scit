@@ -1,155 +1,118 @@
-// import React, { Component } from "react";
-// import { Link } from "react-router-dom";
-// import {
-//   Container,
-//   Button,
-//   Row,
-//   Col,
-//   Form,
-//   FormControl
-// } from "react-bootstrap";
-
-// class Signup extends Component {
-//   constructor(props) {
-//     super(props);
-//     this.state = {
-//       username: "",
-//       password: ""
-//     };
-//   }
-//   onChange = e => {
-//     this.setState({ [e.target.name]: e.target.value });
-//   };
-
-//   onSignupClick = () => {
-//     const userData = {
-//       username: this.state.username,
-//       password: this.state.password
-//     };
-//     console.log("Sign up " + userData.username + " " + userData.password);
-//   };
-
-//   render() {
-//     return (
-//       <Container>
-//         <Row>
-//           <Col md="4">
-//             <h1>Sign up</h1>
-//             <Form>
-//               <Form.Group controlId="usernameId">
-//                 <Form.Label>User name</Form.Label>
-//                 <Form.Control
-//                   type="text"
-//                   name="username"
-//                   placeholder="Enter user name"
-//                   value={this.state.username}
-//                   onChange={this.onChange}
-//                 />
-//                 <FormControl.Feedback type="invalid"></FormControl.Feedback>
-//               </Form.Group>
-
-//               <Form.Group controlId="passwordId">
-//                 <Form.Label>Your password</Form.Label>
-//                 <Form.Control
-//                   type="password"
-//                   name="password"
-//                   placeholder="Enter password"
-//                   value={this.password}
-//                   onChange={this.onChange}
-//                 />
-//                 <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
-//               </Form.Group>
-//             </Form>
-//             <Button
-//               color="primary"
-//               onClick={this.onSignupClick}
-//             >Sign up</Button>
-//             <p className="mt-2">
-//               Already have account? <Link to="/login">Login</Link>
-//             </p>
-//           </Col>
-//         </Row>
-//       </Container>
-//     );
-//   }
-// }
 import React, {Component} from 'react';
-import {Container, Button, Row, Col, Form, FormControl} from 'react-bootstrap';
+import {
+  Container,
+  Button,
+  Row,
+  Col,
+  Form,
+  FormControl,
+  Nav,
+  Navbar,
+} from 'react-bootstrap';
 import icon from '../images/Tuk.jpg';
 import '../main.css';
 import '../index.css';
 export default class Signup extends Component {
-  // 
-
   render () {
     return (
-      //   <Container>
-      //   <Row>
-      //     <Col md="4">
-      //       <h1>Sign up</h1>
-      //       <Form>
-      //         <Form.Group controlId="usernameId">
-      //           <Form.Label>User name</Form.Label>
-      //           <Form.Control
-      //             type="text"
-      //             name="username"
-      //             placeholder="Enter user name"
-      //             value={this.state.username}
-      //             onChange={this.onChange}
-      //           />
-      //           <FormControl.Feedback type="invalid"></FormControl.Feedback>
-      //         </Form.Group>
-
-      //         <Form.Group controlId="passwordId">
-      //           <Form.Label>Your password</Form.Label>
-      //           <Form.Control
-      //             type="password"
-      //             name="password"
-      //             placeholder="Enter password"
-      //             value={this.password}
-      //             onChange={this.onChange}
-      //           />
-      //           <Form.Control.Feedback type="invalid"></Form.Control.Feedback>
-      //         </Form.Group>
-      //       </Form>
-      //       <Button
-      //         color="primary"
-      //         onClick={this.onSignupClick}
-      //       >Sign up</Button>
-      //       {/* <p className="mt-2">
-      //         Already have account? <Link to="/login">Login</Link>
-      //       </p> */}
-      //     </Col>
-      //   </Row>
-      // </Container>
-      (
-        <div className="head">
-          <Container fluid>
+      <div className="head">
+        <Container fluid>
           <header className="App-head">
             <div className="header">
-            <div className="tuk">
-              <img src={icon} alt="import" className="img" />
+              <div className="header-text-image mb-5">
+                <div className="tuk">
+                  <img src={icon} alt="import" className="img" />
 
-            </div>
+                </div>
 
-            <Row>
+                <Row>
 
-              <div
-                className="text-nowrap, fs-2"
-                style={{width: '35rem', color: 'goldenrod'}}
-              >
-                TUK-CSI ALLOCATION SCHEME 2021/2022
+                  <div
+                    className="text-nowrap, fs-2"
+                    style={{width: '35rem', color: 'goldenrod'}}
+                  >
+                    TUK-CSI ALLOCATION SCHEME 2021/2022
+                  </div>
+                </Row>
               </div>
-            </Row>
+              <div className="navbar">
+                <Navbar variant="dark" className="nav" expand="lg">
+                  <Container>
 
+                    <Nav className="me-auto">
+                      <Nav.Link href="#home">All Allocations</Nav.Link>
+                      <Nav.Link href="#features">Lecturer Allocation</Nav.Link>
+                      <Nav.Link href="#pricing">School Allocation</Nav.Link>
+                    </Nav>
+                  </Container>
+                </Navbar>
+              </div>
+              <div className="form-input">
+                <Form>
+                  <Row>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Lecturer Name" />
+                    </Col>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Unit Name" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="School" />
+                    </Col>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Programme" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Module" />
+                    </Col>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Approx. No of Students" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Code" />
+                    </Col>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Department" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Class Code" />
+                    </Col>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Hours" />
+                    </Col>
+                  </Row>
+                  <Row>
+                    <Col className="mb-3">
+                      <Form.Control placeholder="Level" className="small" />
+                    </Col>
+                    {/* <Col className="mb-3">
+                      <Form.Control placeholder="Hours" />
+                    </Col> */}
+                  </Row>
+                </Form>
+              </div>
+              <div className="Submit">
+                <Button
+                  variant="primary"
+                  type="submit"
+                  className="mt-5"
+                  onClick={this.onSubmitClick}
+                >
+                 Submit
+                </Button>
+              </div>
             </div>
           </header>
         </Container>
-        </div>
-        
-      )
+      </div>
     );
   }
 }
-
-// export default Signup;
