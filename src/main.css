@@ -1,0 +1,92 @@
+.head {
+  text-align: center;
+  
+}
+
+.App-head {
+    background-color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-size: 554px, 510px;
+    background-position: left top,right center;
+  }
+
+  .img{
+    /* max-height: 40px;
+    max-width: 40px; */
+    margin-right: 50px;
+    margin-top: 20px;  
+    /* position: absolute; */
+    width: 101px;
+    height: 170px;
+    left: 390px;
+    top: 73px;
+  }
+  .text-nowrap , .fs-2 {
+    position: absolute;
+  
+    left: 420px;
+    top: 89px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    
+    text-align: center;
+    
+    color: #C5A665;
+   
+  }
+  
+  /* .text-wrap, .fs-2{
+    position: absolute;
+   
+    left: 420px;
+    top: 85px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    
+    text-align: center;
+  } */
+  .tuk{
+    
+    position: absolute;
+    width: 101px;
+    height: 157px;
+    left: 10px;
+    top: 0px;
+  }
+
+  .header{
+    margin-top: 10px;
+    position: absolute;
+    width: 1108px;
+    height: 5px;
+    left: 0px;
+    top: 20px;
+  }
+  .form{
+    position: absolute;
+    width: 615px;
+    height: 212px;
+    left: 400px;
+    top: 169px;
+  }
+  .login{
+    position: absolute;
+width: 178px;
+height: 74px;
+left: 625px;
+top: 430px;
+  }

@@ -2,10 +2,7 @@
   text-align: center;
   
 }
-/* .logo{
-  background-image: url('images/undraw2.png');
-  background-position-y: center;
-} */
+
 
 .App-logo {
   height: 40vmin;
@@ -26,12 +23,12 @@
   width: 101px;
   height: 170px;
   left: 390px;
-  top: 45px;
+  top: 73px;
 }
 
 .text-nowrap .mt-3 .fs-2{
   margin-left: 0px;
-  margin-top: 10px;
+ 
 }
 .App-header {
   background-color: #ffffff;
@@ -48,6 +45,7 @@
   background-size: 554px, 510px;
   background-position: left top,right center;
 }
+
 
 .App-link {
   color: #61dafb;
